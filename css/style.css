@@ -85,9 +85,6 @@ body {
 .main .main-content .search button:hover {
   border: 1px solid white;
 }
-.main .main-content .weather {
-  display: none;
-}
 .main .main-content .weather .warning {
   margin-top: 10px;
   text-align: center;
@@ -114,7 +111,7 @@ body {
   justify-content: left;
   align-items: center;
 }
-.main .main-content .weather .detail .icon {
+.main .main-content .weather .detail .weather-icon {
   animation: translation 2.5s linear infinite alternate;
 }
 @keyframes translation {

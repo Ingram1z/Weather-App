@@ -13,7 +13,6 @@ window.onload = function(){
           console.log(response.data);
         })
         
-        // .then( this.showWeather(this.weatherDetail) )
         
     },
     search: function(){
