@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="icon" href="icon.png">
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap"
+    rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <div id="backgroundImg"></div>
+  <div class="title">
+    <div class="title-content">
+      <h1>🌦️ Weather ☔️️️️️️️️️️️️️</h1>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-content">
+      <div class="search">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button>
+          <svg t="1627891364120" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="5255" width="1.5em" height="1em">
+            <path d="M781.9264 691.1232l236.928 236.9216-90.816 90.8032-236.9152-236.9216c-72.032 53.3568-161.184 84.9088-257.7088 84.9088C194.048 866.8352 0 672.7872 0 433.408 0 194.048 194.048 0 433.4144 0c239.3728 0 433.4208 194.048 433.4208 433.4144 0 96.5248-31.552 185.6768-84.9088 257.7088z m-348.512 47.2896c168.448 0 304.9984-136.5504 304.9984-304.9984S601.8624 128.4224 433.4144 128.4224 128.4224 264.9728 128.4224 433.408c0 168.448 136.5504 304.9984 304.992 304.9984z" p-id="5256">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather">
+        <div class="warning">注意：请输入城市名拼音，如<span class="other">shanghai</span></div>
+        <h2 class="city">Weather in Shanghai</h2>
+        <h1 class="temp">21°C</h1>
+        <div class="detail">
+          <img class="weather-icon" src="https://openweathermap.org/img/wn/04d.png" alt="">
+          <div class="description">多云</div>
+        </div>
+        <div class="others">
+          <div class="humidity">湿度: 60%</div>
+          <div class="wind">风速: 6.2 km/h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="link">
+      <a href="https://github.com/Ingram1z/Weather-App">~ Ingram1z</a>
+    </div>
+  </div>
+
+
+
+  <script src="./js/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector('.main-content'),{
+      max: 15,
+      glare: true,
+      "max-glare": 0.5,
+      reverse: true,
+      speed: 400,
+    })
+  </script>
+</body>
+</html>
