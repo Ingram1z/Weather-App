@@ -85,6 +85,9 @@ body {
 .main .main-content .search button:hover {
   border: 1px solid white;
 }
+.main .main-content .weather {
+  display: none;
+}
 .main .main-content .weather .warning {
   margin-top: 10px;
   text-align: center;
